@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color:  #222;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header .title {
+    font-size: 2.5rem;
+    margin: 40px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    max-height: 400px;
+    padding: 50px 0px;
+}
+.container .vs_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 100px 200px ;
+    border-radius: 25px;
+    background-color: #514f4f;
+    gap: 200px;
+
+} 
+.container .vs_container .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: center;
+    text-align: center;
+}
+.container .vs_container .player p {
+    font-size: 30px;
+}
+.container .vs_container .player .puntaje {
+    bottom: -6rem;
+    position: relative;
+}
+.container .vs_container .vs {
+    font-size: 15px;
+    padding: 20px 20px;
+    text-align: center;
+
+}
+.btn_container .game_options {
+    display: flex;
+    margin-top: 40px;
+}
+.btn_container .game_options button {
+    margin: 0 20px 40px 20px;
+    width: 80px;
+    height: 50px;
+    background-color: #3daa48;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 15%;
+    box-shadow: 3px 3px 3px rgb(251, 249, 249);
+    cursor: pointer;
+}
+.btn_container .game_options button:hover {
+    background-color: #049312;
+    transition: 1s linear ease-in;
+}
+.start_game button {
+    margin: 0 20px 40px 20px;
+    width: 100px;
+    height: 30px;
+    background-color: #3daa48;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 15%;
+    box-shadow: 3px 3px 3px rgb(251, 249, 249);
+    cursor: pointer;
+}
+.start_game button:hover {
+    background-color: #049312;
+    transition: 1s linear ease-in;
+}
+.start_game .link a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 290px;
+    gap: 10px;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #514f4f;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 2px;
+    background-color: #050000;
+    padding: .3rem 36rem;
+    text-align: center;
+    margin-top: 40px;
+}

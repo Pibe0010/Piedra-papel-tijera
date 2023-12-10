@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Piedra Papel Tijera</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Piedra | Papel | Tijera</h1>
+    </header>
+
+    <div class="container">
+        <div class="vs_container">
+            <div class="player" >
+                <p id="player1">Player 1</p>
+                <p class="puntaje" id="ptos_player1">0</p>
+            </div>
+
+            <div class="vs">
+                <h1 id="result">VS</h1>
+            </div>
+
+            <div class="player" >
+                <p id="player2">Player 2</p>
+                <p class="puntaje" id="ptos_player2">0</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="btn_container">
+        <div class="game_options">
+            <button type="submit" id="piedra">
+                🗿<p>Piedra</p>
+            </button>
+            <button type="submit" id="papel">
+                📄<p>Papel</p>
+            </button>
+            <button type="submit" id="tijera">
+                ✂️<p>Tijera</p>
+            </button>
+        </div>
+    </section>
+
+    <div class="start_game">
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        <button class="link" id="extremo"><a href="/extremo.html">Juego Extremo</a></button>
+    </div>
+
+    <article>
+        <h3>Reglas</h3>
+        <p>
+            1 - Clasico juego:
+            🗿 Piedra machaca tijeras.
+            ✂️ Tijeras corta papel.
+            📄 Papel envuelve piedra.
+        </p>
+
+        <p>
+            2 - Juego extremo:
+            🗿 Piedra aplasta lagarto.
+            🦎 Lagarto envenena Spock.
+            🖖 Spock destruye tijeras.
+            ✂️ Tijeras decapitan lagarto.
+            🦎 Lagarto devora papel.
+            📄 Papel desautoriza Spock.
+            🖖 Spock vaporiza piedra.
+        </p>
+    </article>
+
+    <footer>
+        <p>© copyright Daniel Montero 2023</p>
+    </footer>
+
+    <script type="module" src="./juego.js"></script>
+</body>
+
+</html>
