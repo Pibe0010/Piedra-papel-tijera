@@ -43,10 +43,17 @@ opt_tijera.onclick = function() {
     select_player1 = "tijera"
     sell_player1.innerHTML = `<p>✂️</p>`
 }
-
+opt_lagarto.onclick = function() {
+    select_player1 = "lagarto"
+    sell_player1.innerHTML = `<p>🦎</p>`
+}
+opt_spock.onclick = function() {
+    select_player1 = "spock"
+    sell_player1.innerHTML = `<p>🖖</p>`
+}
 
 // Seleccion de CPU random
-var val_opt_random = ["piedra","papel","tijera"];
+var val_opt_random = ["piedra","papel","tijera","lagarto","spock"];
 function opt_random() {
     return[...val_opt_random]
     .sort(()=>Math.random() > 0.5 ? 1:-1)
@@ -63,7 +70,12 @@ function display_option_player(select_player2) {
     } else if(select_player2 == "tijera") {
         sell_player2.innerHTML = `<p>✂️</p>`
 
-    } 
+    } else if(select_player2 == "lagarto") {
+        sell_player2.innerHTML = `<p>🦎</p>`
+    }
+    else  {
+        sell_player2.innerHTML = `<p>🖖</p>`
+    }
 }
 
 // Logica de resultados
@@ -96,6 +108,28 @@ function game_vs(select_player1, select_player2) {
         } else if(select_player2 == "piedra" ) {
             vs = "p2win";
         } else if(select_player2 == "spock") {
+            vs = "p2win";
+        } else {
+            vs = "p1win";
+        }
+
+    } else if(select_player1 == "lagarto") {
+        if(select_player2 == "lagarto") {
+            vs = "same";
+        } else if(select_player2 == "tijera" ) {
+            vs = "p2win";
+        } else if(select_player2 == "pidra") {
+            vs = "p2win";
+        } else {
+            vs = "p1win";
+        }
+
+    } else if(select_player1 == "spock") {
+        if(select_player2 == "spock") {
+            vs = "same";
+        } else if(select_player2 == "lagarto" ) {
+            vs = "p2win";
+        } else if(select_player2 == "papel"){
             vs = "p2win";
         } else {
             vs = "p1win";
