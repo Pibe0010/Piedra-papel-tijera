@@ -1,25 +1,25 @@
 //  variables  bottones seleccion por id
-var opt_piedra = document.getElementById("piedra");
-var opt_papel = document.getElementById("papel");
-var opt_tijera = document.getElementById("tijera");
-var opt_lagarto = document.getElementById("lagarto");
-var opt_spock = document.getElementById("spock");
+const opt_piedra = document.getElementById("piedra");
+const opt_papel = document.getElementById("papel");
+const opt_tijera = document.getElementById("tijera");
+const opt_lagarto = document.getElementById("lagarto");
+const opt_spock = document.getElementById("spock");
 
 // variables Mostrar seleccion de usuarios
-var sell_player1 = document.getElementById("player1");
-var sell_player2 = document.getElementById("player2");
+const sell_player1 = document.getElementById("player1");
+const sell_player2 = document.getElementById("player2");
 
 //Variable de resultado
-var ptos_player1 = document.getElementById("ptos_player1").innerText;
-var ptos_player2 = document.getElementById("ptos_player2").innerText;
+let ptos_player1 = document.getElementById("ptos_player1").innerText;
+let ptos_player2 = document.getElementById("ptos_player2").innerText;
 
 // variables de players
-var select_player1;
-var select_player2;
-var vs;
+let select_player1;
+let select_player2;
+let vs;
 
 // Variable de inicio 
-var start = document.getElementById("start");
+let start = document.getElementById("start");
 
 //funcion de jugar 
 start.onclick = function() {
